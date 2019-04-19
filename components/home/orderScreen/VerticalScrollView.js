@@ -9,78 +9,79 @@ import {
   ImageBackground,
   TouchableOpacity
 } from "react-native";
+
 var screen = Dimensions.get("window");
 const category = [
   [
     {
       id: 1,
       name: "Trà sữa",
-      imgUrl: require("../../static/products/milktea.jpg")
+      imgUrl: require("../../../static/products/milktea.jpg")
     },
     {
       id: 2,
       name: "Cà phê",
-      imgUrl: require("../../static/products/coffee.jpg")
+      imgUrl: require("../../../static/products/coffee.jpg")
     }
   ],
   [
     {
       id: 12,
       name: "Thức uống đá xay",
-      imgUrl: require("../../static/products/ice.jpg")
+      imgUrl: require("../../../static/products/ice.jpg")
     },
     {
       id: 3,
       name: "Vật Phẩm",
-      imgUrl: require("../../static/products/coffee.jpg")
+      imgUrl: require("../../../static/products/coffee.jpg")
     }
   ],
   [
     {
       id: 4,
       name: "bánh ngọt",
-      imgUrl: require("../../static/products/cake2.jpg")
+      imgUrl: require("../../../static/products/cake2.jpg")
     },
     {
       id: 5,
       name: "bánh mặn",
-      imgUrl: require("../../static/products/cake1.jpg")
+      imgUrl: require("../../../static/products/cake1.jpg")
     }
   ],
   [
     {
       id: 6,
       name: "Món gần đây",
-      imgUrl: require("../../static/products/special1.jpg")
+      imgUrl: require("../../../static/products/special1.jpg")
     },
     {
       id: 7,
       name: "Món nổi bật",
-      imgUrl: require("../../static/products/special2.jpg")
+      imgUrl: require("../../../static/products/special2.jpg")
     }
   ],
   [
     {
       id: 8,
       name: "Món gần đây",
-      imgUrl: require("../../static/products/special1.jpg")
+      imgUrl: require("../../../static/products/special1.jpg")
     },
     {
       id: 9,
       name: "Món nổi bật",
-      imgUrl: require("../../static/products/special2.jpg")
+      imgUrl: require("../../../static/products/special2.jpg")
     }
   ],
   [
     {
       id: 10,
       name: "Món gần đây",
-      imgUrl: require("../../static/products/special1.jpg")
+      imgUrl: require("../../../static/products/special1.jpg")
     },
     {
       id: 11,
       name: "Món nổi bật",
-      imgUrl: require("../../static/products/special2.jpg")
+      imgUrl: require("../../../static/products/special2.jpg")
     }
   ]
 ];
@@ -90,8 +91,7 @@ export default class VerticalScrollView extends Component {
   }
 
   navigateToListproduct = () => {
-    // alert("123");
-    this.props.navigation.navigate("Detail");
+    this.props.navigation.navigate("Products");
   };
 
   getListCategory = () => {

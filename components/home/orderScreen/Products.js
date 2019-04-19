@@ -8,7 +8,7 @@ import {
   Dimensions,
   ImageBackground
 } from "react-native";
-import Card from "../Card";
+import Card from "../../Card";
 
 const products = [
   [
@@ -16,13 +16,13 @@ const products = [
       name: "Trà sữa",
       size: "nhỏ",
       ml: 457,
-      imgUrl: require("../../static/products/milktea.jpg")
+      imgUrl: require("../../../static/products/milktea.jpg")
     },
     {
       name: "Cà phê",
       size: "nhỏ",
       ml: 457,
-      imgUrl: require("../../static/products/coffee.jpg")
+      imgUrl: require("../../../static/products/coffee.jpg")
     }
   ],
   [
@@ -30,13 +30,13 @@ const products = [
       name: "Thức uống đá xay",
       size: "nhỏ",
       ml: 457,
-      imgUrl: require("../../static/products/ice.jpg")
+      imgUrl: require("../../../static/products/ice.jpg")
     },
     {
       name: "Vật Phẩm",
       size: "nhỏ",
       ml: 457,
-      imgUrl: require("../../static/products/coffee.jpg")
+      imgUrl: require("../../../static/products/coffee.jpg")
     }
   ],
   [
@@ -44,13 +44,13 @@ const products = [
       name: "bánh ngọt",
       size: "nhỏ",
       ml: 457,
-      imgUrl: require("../../static/products/cake2.jpg")
+      imgUrl: require("../../../static/products/cake2.jpg")
     },
     {
       name: "bánh mặn",
       size: "nhỏ",
       ml: 457,
-      imgUrl: require("../../static/products/cake1.jpg")
+      imgUrl: require("../../../static/products/cake1.jpg")
     }
   ],
   [
@@ -58,13 +58,13 @@ const products = [
       name: "Món gần đây",
       size: "nhỏ",
       ml: 457,
-      imgUrl: require("../../static/products/special1.jpg")
+      imgUrl: require("../../../static/products/special1.jpg")
     },
     {
       name: "Món nổi bật",
       size: "nhỏ",
       ml: 457,
-      imgUrl: require("../../static/products/special2.jpg")
+      imgUrl: require("../../../static/products/special2.jpg")
     }
   ],
   [
@@ -72,13 +72,13 @@ const products = [
       name: "Món gần đây",
       size: "nhỏ",
       ml: 457,
-      imgUrl: require("../../static/products/special1.jpg")
+      imgUrl: require("../../../static/products/special1.jpg")
     },
     {
       name: "Món nổi bật",
       size: "nhỏ",
       ml: 457,
-      imgUrl: require("../../static/products/special2.jpg")
+      imgUrl: require("../../../static/products/special2.jpg")
     }
   ],
   [
@@ -86,13 +86,13 @@ const products = [
       name: "Món gần đây",
       size: "nhỏ",
       ml: 457,
-      imgUrl: require("../../static/products/special1.jpg")
+      imgUrl: require("../../../static/products/special1.jpg")
     },
     {
       name: "Món nổi bật",
       size: "nhỏ",
       ml: 457,
-      imgUrl: require("../../static/products/special2.jpg")
+      imgUrl: require("../../../static/products/special2.jpg")
     }
   ]
 ];
@@ -113,6 +113,7 @@ export default class Products extends Component {
             ml={product[1].ml}
             imgUrl={product[1].imgUrl}
           />
+          
         </View>
       );
     });

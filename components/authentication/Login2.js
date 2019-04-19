@@ -26,7 +26,7 @@ export default class Login2 extends Component {
     super(props);
   }
   login = () => {
-    this.props.navigation.navigate("Home");
+    this.props.navigation.navigate("SignedIn");
   };
 
   render() {

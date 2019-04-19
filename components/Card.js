@@ -39,7 +39,7 @@ export default class Card extends Component {
             <IconFontAwesome
               name="plus"
               size={20}
-              color={"rgba(255,255,255,0.7)"}
+              color={"#ffa502"}
             />
           </View>
         </View>
